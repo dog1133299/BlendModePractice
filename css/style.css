@@ -1,7 +1,18 @@
  
-@keyframes flying1{
+@-webkit-keyframes flying1{
   0%{background-position: 260% 0,50% 50%, 50% 50%; }
   25%{background-position:-200% 0,50% 50%, 50% 50%;}
+  100%{background-position: -200% 0,50% 50%, 50% 50%;}
+}
+ @keyframes flying1{
+  0%{background-position: 260% 0,50% 50%, 50% 50%; }
+  25%{background-position:-200% 0,50% 50%, 50% 50%;}
+  100%{background-position: -200% 0,50% 50%, 50% 50%;}
+}
+ @-webkit-keyframes flying2{
+  0%{background-position: 260% 0,50% 50%, 50% 50%; }
+  25%{background-position: 260% 0,50% 50%, 50% 50%;}
+  50%{background-position: -200% 0,50% 50%, 50% 50%;}
   100%{background-position: -200% 0,50% 50%, 50% 50%;}
 }
  @keyframes flying2{
@@ -10,9 +21,20 @@
   50%{background-position: -200% 0,50% 50%, 50% 50%;}
   100%{background-position: -200% 0,50% 50%, 50% 50%;}
 }
+@-webkit-keyframes flying3{
+  0%{background-position: 260% 0,50% 50%, 50% 50%; }
+  75%{background-position: 260% 0,50% 50%, 50% 50%;}
+  100%{background-position: -200% 0,50% 50%, 50% 50%;}
+}
 @keyframes flying3{
   0%{background-position: 260% 0,50% 50%, 50% 50%; }
   75%{background-position: 260% 0,50% 50%, 50% 50%;}
+  100%{background-position: -200% 0,50% 50%, 50% 50%;}
+}
+@-webkit-keyframes flying4{
+  0%{background-position: 260% 0,50% 50%, 50% 50%; }
+  50%{background-position: 260% 0,50% 50%, 50% 50%;}
+  75%{background-position: -200% 0,50% 50%, 50% 50%;}
   100%{background-position: -200% 0,50% 50%, 50% 50%;}
 }
 @keyframes flying4{
@@ -40,37 +62,51 @@ body{
  }
  .mirror1{ 
   top: 5%;left: 5%;
+  background-image: url(../src/img/bird2.gif),-webkit-linear-gradient(45deg, white 50%, transparent 50%),-webkit-linear-gradient(135deg, white 50%, transparent 50%)  ;
+  background-image: url(../src/img/bird2.gif),-o-linear-gradient(45deg, white 50%, transparent 50%),-o-linear-gradient(135deg, white 50%, transparent 50%)  ;
   background-image: url(../src/img/bird2.gif),linear-gradient(45deg, white 50%, transparent 50%),linear-gradient(-45deg, white 50%, transparent 50%)  ;
   background-blend-mode: difference;
-  animation: flying1 linear 20s infinite;
+  -webkit-animation: flying1 linear 20s infinite;
+          animation: flying1 linear 20s infinite;
   background-position: 260% -15%,50% 50%, 50% 50%;
  
  }
  .mirror2{ 
   top: 5%;left: 50%;
+  background-image: url(../src/img/bird2.gif),-webkit-linear-gradient(45deg, green 50%, transparent 50%),-webkit-linear-gradient(135deg, yellow 50%, transparent 50%)  ;
+  background-image: url(../src/img/bird2.gif),-o-linear-gradient(45deg, green 50%, transparent 50%),-o-linear-gradient(135deg, yellow 50%, transparent 50%)  ;
   background-image: url(../src/img/bird2.gif),linear-gradient(45deg, green 50%, transparent 50%),linear-gradient(-45deg, yellow 50%, transparent 50%)  ;
   background-blend-mode: lighten;
-  animation: flying2 linear 20s infinite;
+  -webkit-animation: flying2 linear 20s infinite;
+          animation: flying2 linear 20s infinite;
   background-position: 260% -15%,50% 50%, 50% 50%;
  
  }
   
  .mirror3{ 
   top: 50%;left: 25%;
+  background-image: url(../src/img/bird2.gif),-webkit-linear-gradient(45deg, red 50%, transparent 50%),-webkit-linear-gradient(135deg, white 50%, transparent 50%)  ;
+  background-image: url(../src/img/bird2.gif),-o-linear-gradient(45deg, red 50%, transparent 50%),-o-linear-gradient(135deg, white 50%, transparent 50%)  ;
   background-image: url(../src/img/bird2.gif),linear-gradient(45deg, red 50%, transparent 50%),linear-gradient(-45deg, white 50%, transparent 50%)  ;
   background-blend-mode: exclusion;
   background-position: 260% -15%,50% 50%, 50% 50%;
-  transform: rotateY(180deg);
-  animation: flying3 linear 20s infinite;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: flying3 linear 20s infinite;
+          animation: flying3 linear 20s infinite;
 
  }
  .mirror4{ 
   top: 50%;left: 70%;
+  background-image: url(../src/img/bird2.gif),-webkit-linear-gradient(70deg, black 50%, transparent 50%),-webkit-linear-gradient(right, white 50%, transparent 50%)  ;
+  background-image: url(../src/img/bird2.gif),-o-linear-gradient(70deg, black 50%, transparent 50%),-o-linear-gradient(right, white 50%, transparent 50%)  ;
   background-image: url(../src/img/bird2.gif),linear-gradient(20deg, black 50%, transparent 50%),linear-gradient(-90deg, white 50%, transparent 50%)  ;
   background-blend-mode: difference;
   background-position: 260% -15%, 50% 50%, 50% 50%;
-  transform: rotateY(180deg);
-  animation: flying4 linear 20s infinite;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: flying4 linear 20s infinite;
+          animation: flying4 linear 20s infinite;
 
  }
  .msg{
